@@ -3,3 +3,388 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+
+:root {
+    --color-lightgrey: #d3d3d3e6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* NAV  */
+
+nav {
+    position: relative;
+    width: 100%;
+    background-color: var(--color-lightgrey);
+    display: inline-block;
+}
+
+/* NAV TOP  */
+
+.nav-top-div {
+    position: relative;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.nav-search-div {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 20%;
+}
+
+.nav-search-div span {
+    position: absolute;
+    left: 1rem;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.nav-search-div input {
+    height: 40px;
+    border: none;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.nav-logo-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo {
+    width: 20%;
+}
+
+/* NAV BOTTOM  */
+
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nav-bottom ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.nav-bottom ul li{
+    margin-left: 4rem;
+    font-size: 1.25rem;
+}
+
+.nav-bottom ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.6s;
+}
+
+.nav-bottom ul li a:hover {
+   color: white; 
+}
+
+.nav-bottom ul:last-of-type {
+    padding-right: 2rem;
+}
+
+.nav-active {
+    border-bottom: 2px solid rgba(86, 86, 86, 0.39);
+}
+
+/* HEADER */
+
+header {
+    margin-bottom: 2rem;
+}
+
+
+/* SECTION PRODUKTER  */
+
+hr {
+    margin-bottom: 5rem;
+}
+
+#section-produkter {
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+#section-produkter h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#section-produkter img {
+    width: 50%;
+    align-self: center;
+}
+
+.produkter-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 4rem;
+    margin: 0 2rem;
+}
+
+.produkter-div figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.produkter-div figure p {
+    margin-bottom: 1rem;
+}
+
+.produkter-div figure button {
+    font-family: inherit;
+    border: none;
+    width: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.produkter-div figure button:hover {
+    background-color: black;
+    color: var(--color-lightgrey);
+}
+
+/* SECTION OM KRYB  */
+
+#section-om-kryb {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+#section-om-kryb h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#section-om-kryb figure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#section-om-kryb figure p {
+    margin-bottom: 2rem;
+}
+
+#section-om-kryb figure p:first-of-type {
+    font-size: 1.25rem;
+}
+
+#section-om-kryb figure a {
+    text-decoration: none;
+    color: black;
+}
+
+/* SECTION OPSKRIFTER  */
+
+#section-opskrifter {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+#section-opskrifter h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#section-opskrifter>div{
+    display: flex;
+    flex-direction: row;
+}
+
+#section-opskrifter img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#section-opskrifter figure {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+}
+
+#section-opskrifter figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.542);
+    color: white;
+    padding: 1rem;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#section-opskrifter figure:hover figcaption {
+    display: block;
+    opacity: 1;
+}
+
+#section-opskrifter figure:nth-child(2){
+    margin: 0 5rem;
+}
+#arrowBackwards {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: -7.5%;
+    background-color: var(--color-lightgrey);
+    border-radius: 500px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#arrowForwards {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: -12%;
+    background-color: var(--color-lightgrey);
+    border-radius: 500px;
+    font-size: 5rem;
+}
+/* SECTION KONTAKT  */
+
+#section-kontakt {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+#section-kontakt h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#section-kontakt>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#section-kontakt p {
+    margin-bottom: 2rem;
+}
+
+#section-kontakt form {
+    background-color: var(--color-lightgrey);
+    padding: 2rem;
+}
+
+#section-kontakt form label, #section-kontakt form input {
+    display: block;
+    width: 100%;
+}
+
+#section-kontakt form input,#section-kontakt form textarea {
+    padding-left: 0.5rem;
+}
+
+#section-kontakt form textarea {
+    resize: none;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 1rem;
+}
+
+#section-kontakt form button {
+    float: right;
+    padding: 0 2rem;
+    height: 30px;
+}
+
+/* FORM VALIDATION CSS  */
+
+.formValid {
+    border: 2px solid lightgreen;
+}
+
+.formValid:focus {
+    outline: 2px solid lightgreen;
+}
+
+.formInvalid {
+    border: 2px solid red;
+}
+
+.formInvalid:focus {
+    outline: 2px solid red;
+}
+
+/* FOOTER  */
+
+footer {
+    background-color: var(--color-lightgrey);
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-socials {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.footer-socials img {
+    width: 10%;
+}
+
+.footer-logo-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    width: 25%;
+}
+
+.footer-links {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links ul li:first-child {
+    font-weight: 700;
+    font-size: 1.33rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
